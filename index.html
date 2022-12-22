@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="icon.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/5e03b00271.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Bonsai</title>
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <a href="#"><img src="logo.svg" class="logo" /></a>
+        <ul class="nav-links" data-visible="false">
+          <li id="product">
+            <a href="#"
+              >Product <i class="fa-solid fa-chevron-down" id="dropdown"></i
+            ></a>
+          </li>
+          <li id="templates">
+            <a href="#"
+              >Templates <i class="fa-solid fa-chevron-down" id="dropdown"></i
+            ></a>
+          </li>
+          <li id="pricing">
+            <a href="#"
+              >Pricing <i class="fa-solid fa-chevron-down" id="dropdown"></i
+            ></a>
+          </li>
+          <li id="reviews">
+            <a href="#"
+              >Reviews <i class="fa-solid fa-chevron-down" id="dropdown"></i
+            ></a>
+          </li>
+          <div class="nav-buttons" data-visible="false">
+            <button class="btn-outline">log in</button>
+            <button class="btn-solid">start free</button>
+          </div>
+        </ul>
+        <!-- <div class="nav-buttons" data-visible="false">
+          <button class="btn-outline">log in</button>
+          <button class="btn-solid">start free</button>
+        </div> -->
+        <div class="menu" id="menu" aria-expanded="false" />
+      </div>
+    </nav>
+    <section class="plans">
+      <div class="container">
+        <h2 class="plans-header">Plans & Pricing</h2>
+        <div class="plans-content">
+          <div class="plan">
+            <h3 class="plan-heading">Workflow</h3>
+            <div class="plan-pricing">
+              <span class="plan-currency">$</span>
+              <span class="plan-price">19</span>
+              <span class="plan-duration">/month</span>
+            </div>
+            <div class="plan-details">
+              <div class="tick-details">
+                <i class="fa-solid fa-check" id="tick"></i>
+                <div class="div">All Templates</div>
+              </div>
+              <div class="tick-details">
+                <i class="fa-solid fa-check" id="tick"></i>
+                <div class="div">Unlimited Clients & Projects</div>
+              </div>
+              <div class="tick-details">
+                <i class="fa-solid fa-check" id="tick"></i>
+                <div class="div">Invoicing & Payments</div>
+              </div>
+              <div class="tick-details">
+                <i class="fa-solid fa-check" id="tick"></i>
+                <div class="div">Proposals & Contracts</div>
+              </div>
+              <div class="tick-details">
+                <i class="fa-solid fa-check" id="tick"></i>
+                <div class="div">Tasks & Time Tracking</div>
+              </div>
+              <div class="tick-details">
+                <i class="fa-solid fa-check" id="tick"></i>
+                <div class="div">Client CRM</div>
+              </div>
+              <div class="tick-details">
+                <i class="fa-solid fa-check" id="tick"></i>
+                <div class="div">Expense Tracking</div>
+              </div>
+              <div class="tick-details">
+                <i class="fa-solid fa-check" id="tick"></i>
+                <div class="div">Up to 5 Project Collaborators</div>
+              </div>
+            </div>
+            <button class="btn-solid" id="plan-btn">start free</button>
+          </div>
+          <div class="plan">
+            <div class="tag">
+              <div class="tag-label">MOST POPULAR</div>
+            </div>
+            <h3 class="plan-heading">Workflow Plus</h3>
+            <div class="plan-pricing">
+              <span class="plan-currency">$</span>
+              <span class="plan-price">39</span>
+              <span class="plan-duration">/month</span>
+            </div>
+            <div class="plan-details">
+              <div class="tick-details">
+                <i class="fa-solid fa-check" id="tick"></i>
+                <div class="div">Everything in Workflow</div>
+              </div>
+              <div class="tick-details">
+                <i class="fa-solid fa-check" id="tick"></i>
+                <div class="div">Custom Branding</div>
+              </div>
+              <div class="tick-details">
+                <i class="fa-solid fa-check" id="tick"></i>
+                <div class="div">
+                  Forms & Questionnaires <span id="status">New</span>
+                </div>
+              </div>
+              <div class="tick-details">
+                <i class="fa-solid fa-check" id="tick"></i>
+                <div class="div">Workflow Automations</div>
+              </div>
+              <div class="tick-details">
+                <i class="fa-solid fa-check" id="tick"></i>
+                <div class="div">Client Portal</div>
+              </div>
+              <div class="tick-details">
+                <i class="fa-solid fa-check" id="tick"></i>
+                <div class="div">QuickBooks Integration</div>
+              </div>
+              <div class="tick-details">
+                <i class="fa-solid fa-check" id="tick"></i>
+                <div class="div">Calendly Integration</div>
+              </div>
+              <div class="tick-details">
+                <i class="fa-solid fa-check" id="tick"></i>
+                <div class="div">Zapier Integration</div>
+              </div>
+              <div class="tick-details">
+                <i class="fa-solid fa-check" id="tick"></i>
+                <div class="div">Up to 15 Project Collaborators</div>
+              </div>
+            </div>
+            <button class="btn-solid" id="plan-btn">start free</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="add-on">
+      <div class="container">
+        <h3 class="add-on_header">Supercharge your work with add-ons</h3>
+        <div class="add-ons">
+          <div class="text">
+            <div class="small-text">
+              <h3>Collaborators</h3>
+              <p>
+                Invite other users to specific projects for limited access and
+                functionality.
+              </p>
+            </div>
+            <div class="add-on_price">Free</div>
+          </div>
+          <div class="text">
+            <div class="small-text">
+              <h3>Partners</h3>
+              <p>
+                Invite other users for full account access and company
+                management.
+              </p>
+            </div>
+            <div class="add-on_price">
+              $9 <br /><span class="add-on_duration">/MONTH</span>
+            </div>
+          </div>
+          <div class="text">
+            <div class="small-text">
+              <h3>Bonsai Tax</h3>
+              <p>
+                Track expenses, identify write-offs, and estimate quarterly
+                taxes easily.
+              </p>
+              <a href="#">Learn more</a>
+            </div>
+
+            <div class="add-on_price">
+              $10 <br /><span class="add-on_duration">/MONTH</span>
+            </div>
+          </div>
+        </div>
+        <div class="add-on_action">
+          <h2 class="add-on_text">
+            It's <span>your</span> business.<br />
+            We're here to help it grow
+          </h2>
+          <button class="add-on_btn">start free</button>
+        </div>
+      </div>
+    </section>
+    <section class="faq">
+      <div class="container">
+        <h2 class="faq-header">Frequently Asked Questions</h2>
+        <ul class="faq-links">
+          <li>
+            <a href="#"
+              >How does the 14 days free trial work?
+              <i class="fa-solid fa-chevron-down"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#"
+              >Can I change plans anytime?
+              <i class="fa-solid fa-chevron-down"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#"
+              >How do I pause my Bonsai subscription?
+              <i class="fa-solid fa-chevron-down"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#"
+              >What is your refund policy?
+              <i class="fa-solid fa-chevron-down"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="footer-container">
+          <div class="product">
+            <h3 class="footer-header">product</h3>
+            <div class="footer-links">
+              <li><a href="#">Proposals</a></li>
+              <li><a href="#">Contracts</a></li>
+              <li><a href="#">Invoicing</a></li>
+              <li><a href="#">Client CRM</a></li>
+              <li><a href="#">Scheduling</a></li>
+              <li><a href="#">Time tracking</a></li>
+              <li><a href="#">Tasks management</a></li>
+              <li><a href="#">Forms</a></li>
+              <li><a href="#">Accounting</a></li>
+              <li><a href="#">Taxes</a></li>
+              <li><a href="#">Banking</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Bonsai Reviews</a></li>
+            </ul>
+            </div>
+          </div>
+          <div class="free-resources">
+            <h3 class="footer-header">free resources</h3>
+            <ul class="footer-links">
+              <li><a href="#">Freelance Resources</a></li>
+              <li><a href="#">Freelance Blog by Bonsai</a></li>
+              <li><a href="#">How to Write a Contract</a></li>
+              <li><a href="#">Online Signature Maker</a></li>
+              <li><a href="#">Self-Employed Taxes Hub</a></li>
+              <li><a href="#">Self-Employed Tax Calculator</a></li>
+              <li><a href="#">Self-Employed Tax Calculator</a></li>
+              <ul class="templates">
+                <h4 class="templates-header">Templates</h4>
+                <li><a href="#">Invoice Templates</a></li>
+                <li><a href="#">Proposal Templates</a></li>
+                <li><a href="#">Contract Templates</a></li>
+                <li><a href="#">Agreement Templates</a></li>
+                <li><a href="#">Scope of Work Templates</a></li>
+                <li><a href="#">Quote Templates</a></li>
+                <li><a href="#">Credit Note Templates</a></li>
+                <li><a href="#">Estimate Templates</a></li>
+              </ul>
+            </ul>
+          </div>
+          <div class="bonsai">
+            <h3 class="footer-header">bonsai</h3>
+            <ul class="footer-links">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">LinkedIn CRM</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Legal</a></li>
+              <li><a href="#">Affiliates</a></li>
+              <li><a href="#">Write for US</a></li>
+              <li><a href="#">Comparisons</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
